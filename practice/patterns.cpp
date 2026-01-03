@@ -119,20 +119,98 @@ int main() {
   12321
   */
 
+  //   int n = 4;
+  //   for (int i = 0; i <= (n - 1); i++) { // lines
+  //     for (int j = 0; j < (n - i - 1); j++) {
+  //       cout << " ";
+  //     }
+  //     for (int k = 1; k <= i + 1; k++) {
+  //       cout << k;
+  //     }
+
+  //     for (int l = i; l > 0; l--) {
+  //       cout << l;
+  //     }
+  //     cout << endl;
+  //   }
+
+  /*
+  Hollow diamond pattern
+    *
+  *   *
+    *
+  */
+
+  //   int n = 4;
+  //   // top part
+  //   for (int i = 0; i <= (n - 1); i++) { // lines
+  //     // spaces
+  //     for (int j = 0; j < (n - i - 1); j++) {
+  //       cout << " ";
+  //     }
+
+  //     cout << "*";
+
+  //     if (i != 0) {
+  //       for (int j = 0; j < (2 * i - 1); j++) {
+  //         cout << " ";
+  //       }
+  //       cout << "*";
+  //     }
+  //     cout << endl;
+  //   }
+
+  //   // bottom part
+  //   for (int i = 0; i < n - 1; i++) {
+  //     // spaces
+  //     for (int j = 0; j < i + 1; j++) {
+  //       cout << " ";
+  //     }
+  //     cout << "*";
+
+  //     if (i != n - 2) {
+  //       // spaces
+  //       for (int j = 0; j < 2 * (n - i) - 5; j++) {
+  //         cout << " ";
+  //       }
+  //       cout << "*";
+  //     }
+  //     cout << endl;
+  //   }
+
   int n = 4;
-  for (int i = 0; i <= (n - 1); i++) { // lines
-    for (int j = 0; j < (n - i - 1); j++) {
+  // top part
+  for (int i = 0; i < n; i++) { // lines
+    // stars
+    for (int j = 0; j < (i + 1); j++) {
+      cout << "*";
+    }
+    for (int j = 2 * (n - i - 1); j > 0; j--) {
       cout << " ";
     }
-    for (int k = 1; k <= i + 1; k++) {
-      cout << k;
-    }
-
-    for (int l = i; l > 0; l--) {
-      cout << l;
+    // stars
+    for (int j = i + 1; j > 0; j--) {
+      cout << "*";
     }
     cout << endl;
   }
 
+  // bottom part
+  //  top part
+  for (int i = 0; i < n; i++) { // lines
+    // stars
+    for (int j = 0; j < n - i; j++) {
+      cout << "*";
+    }
+    // spaces
+    for (int j = 0; j < 2 * i; j++) {
+      cout << " ";
+    }
+    // stars
+    for (int j = n - i; j > 0; j--) {
+      cout << "*";
+    }
+    cout << endl;
+  }
   return 0;
 }
