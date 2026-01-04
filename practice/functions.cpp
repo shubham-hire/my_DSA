@@ -48,7 +48,17 @@ int Rfactorial(int n) { // recursion
   return n * Rfactorial(n - 1);
 }
 
+void ISprime(int n) {
+  int flag;
+  for (int i = 2; i < n; i++) {
+    if (n % i == 0) {
+      break;
+    }
+    cout << "Prime Number" << endl;
+  }
+}
+
 int main() {
-  cout << Rfactorial(5) << endl;
+  ISprime(9);
   return 0;
 }
