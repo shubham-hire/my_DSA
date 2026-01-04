@@ -67,7 +67,7 @@ int main() {
     4321  (i+3)(i+2)(i+1)(i)
   */
   //   int n = 5;
-  // //   int a = 5;
+  //   int a = 5;
   //   for (int i = 0; i <= (n - 1); i++) { // lines
   //     for (int j = i + 1; j > 0; j--) {
   //       cout << j;
@@ -196,7 +196,6 @@ int main() {
   }
 
   // bottom part
-  //  top part
   for (int i = 0; i < n; i++) { // lines
     // stars
     for (int j = 0; j < n - i; j++) {
