@@ -69,6 +69,8 @@ int main() {
   //   } else {
   //     cout << "element found at index " << result << endl;
   //   }
+  // this is array
+  // int arr[5]={6,7,8,9}
 
   int arr[5] = {1, 2, 3, 4, 5};
   arrRev(arr, 5);
