@@ -29,6 +29,7 @@ int main() {
   //   cout << "max subarray sum = " << maxSum << endl;
   // this is lec 3
   // Kadane's Algorithm
+  // this is kadane's algorithm
 
   return 0;
 }
