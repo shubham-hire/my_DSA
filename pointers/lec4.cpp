@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;
 
-bool isValid(vector<int> &arr, int n, int m, int maxAllowedPages) { //O(n)
+// book Allocation problem
+bool isValid(vector<int> &arr, int n, int m, int maxAllowedPages) { // O(n)
   int students = 1, pages = 0;
   for (int i = 0; i < n; i++) {
     if (arr[i] > maxAllowedPages) {
@@ -26,7 +27,7 @@ int allocateBooks(vector<int> &arr, int n, int m) {
     return -1;
   }
   int sum = 0;
-  for (int i = 0; i < n; i++) { //O(n)
+  for (int i = 0; i < n; i++) { // O(n)
     sum += arr[i];
   }
 
