@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 int singleNonDuplicate(vector<int> &nums) {
   int n = nums.size();
   int st = 1, end = n - 1;
