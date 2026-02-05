@@ -1,6 +1,7 @@
+// mathematics for DSA
+
 #include <iostream>
 using namespace std;
-
 string isPrime(int n) {
   for (int i = 0; i * i <= n; i++) {
     if (n % i == 0) {

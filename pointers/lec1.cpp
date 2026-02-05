@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// POINTERS
+// POINTERS.
 
 void changed(int &ptr) { // pass by reference using pointer
   // hello
